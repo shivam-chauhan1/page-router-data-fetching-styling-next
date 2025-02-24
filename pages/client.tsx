@@ -18,12 +18,15 @@ export default function ClientSideFetching() {
     fetcher
   );
 
-  if (error) return <p>Failed to load data.</p>;
-  if (!data) return <p>Loading...</p>;
+  if (error)
+    return <p className="text-red-500 text-center">Failed to load data.</p>;
+  if (!data) return <p className="text-center text-gray-500">Loading...</p>;
 
   return (
-    <div>
-      <h1 className={clientStyles.heading}>Client-side Fetched Data</h1>
+    <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+      <h1 className={`${clientStyles.heading} text-2xl font-semibold mb-4`}>
+        Client-side Fetched Data
+      </h1>
       <StyledTable>
         <thead>
           <tr>
@@ -33,7 +36,7 @@ export default function ClientSideFetching() {
         </thead>
         <tbody>
           {data.map((item) => (
-            <tr key={item.id}>
+            <tr key={item.id} className="hover:bg-gray-100">
               <td>{item.id}</td>
               <td>{item.name}</td>
             </tr>
@@ -51,7 +54,8 @@ const StyledTable = styled.table`
   th,
   td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px;
+    text-align: left;
   }
   th {
     background-color: #f4f4f4;
