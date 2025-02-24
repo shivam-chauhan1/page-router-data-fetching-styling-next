@@ -1,0 +1,8 @@
+:root {
+  --home-font-color: #1e3a8a; /* Blue */
+}
+
+.heading {
+  color: var(--home-font-color);
+  font-size: 2rem;
+}
