@@ -7,6 +7,10 @@
   --foreground: #171717;
   --primary-font: "Roboto", sans-serif;
   --base-font-size: 16px;
+  --client-font-color: #047857; /* Green */
+  --ssg-font-color: #9333ea; /* Purple */
+  --ssr-font-color: #b91c1c; /* Red */
+  --home-font-color: #1e3a8a; /* Blue */
 }
 
 body {

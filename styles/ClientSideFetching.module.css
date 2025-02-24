@@ -1,7 +1,3 @@
-:root {
-  --client-font-color: #047857; /* Green */
-}
-
 .heading {
   color: var(--client-font-color);
   font-size: 2rem;

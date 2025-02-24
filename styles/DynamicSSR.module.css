@@ -1,7 +1,3 @@
-:root {
-  --ssr-font-color: #b91c1c; /* Red */
-}
-
 .heading {
   color: var(--ssr-font-color);
   font-size: 2rem;

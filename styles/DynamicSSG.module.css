@@ -1,7 +1,3 @@
-:root {
-  --ssg-font-color: #9333ea; /* Purple */
-}
-
 .heading {
   color: var(--ssg-font-color);
   font-size: 2rem;
